@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="production/css/style.min.css">
+	<script src="production/js/scripts.min.js"></script>
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<script src="https://use.typekit.net/jbw2und.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="upper"></div>
+	<div class="upper mobile_only">
+		<a href="#upper"></a>
+	</div>
+
+	<div data-include-html='mainmenu.html'></div>
+	<div data-include-html='header.html'></div>
+
+	<div class="floormenu_wrapper norel width clearfix">
+		<div class="grid lg12 md12 sm12 floormenu">
+			<div class="floormenu__item floormenu__item_menu"><span>Навигация раздела</span></div>
+			<div data-tofloor="floor0" class="floormenu__item"><span>Онлайн-пожертвование</span></div>
+			<div data-tofloor="floor1" class="floormenu__item"><span>Пожертвование через банк</span></div>
+			<div data-tofloor="floor2" class="floormenu__item"><span>Волонтёрам</span></div>
+			<div data-tofloor="floor3" class="floormenu__item"><span>Файлы</span></div>
+			<div data-tofloor="floor4" class="floormenu__item"><span>Публикации</span></div>
+		</div>
+	</div>
+
+	<div data-floor="floor0" class="width help0 clearfix">
+		<h1 class="centered">Помогать</h1>
+		<div class="text centered">Будем благодарны за <a class="dshd" href="#">любую</a> помощь!</div>
+		<div class="help__about clearfix">
+			<div class="help__img grid lg2 md4 sm12">
+				<img src="./production/img/partners/logo_osnova.png" height="146" width="129" alt="">
+			</div>
+			<div class="help__text grid lg5 md8 sm12">
+				<p>
+					Фонд развития и поддержки детского и юношеского спорта «Основа» — благотворительный фонд, объединяющий усилия представителей общества, профессионалов и любителей спорта, болельщиков, представителей власти и бизнеса для всестороннего содействия и помощи в развитии и совершенствовании существующей системы массового и детско-юношеск ого спорта. Ключевой соорганизатор Кубка Анны Богалий – SKIMIR. 
+				</p>
+			</div>
+			<div class="help__picture grid lg5 md0 sm0">
+				<div class="bg_item_help_picture"></div>
+			</div>
+		</div>
+		<div class="help__linelink clearfix">
+			<div class="help__linkitem">
+				<a href="#" class="btn blue rounded popupButton" data-window="targets">
+					<img class="ic_nohover" src="./production/img/ic/ic_question.png" height="15" width="15" alt=""> 
+					<img class="ic_hover" src="./production/img/colored/ic_question_active.png" height="15" width="15" alt=""> 
+					Наша миссия
+				</a>
+			</div>
+			<div class="help__linkitem">
+				<a href="#" class="dshd popupButton" data-window="requisites">Реквизиты фонда</a>
+			</div>
+			<div class="help__linkitem">
+				<a href="#" class="dshd">Информация для спонсоров</a>
+			</div>
+		</div>
+	</div>
+	<form class="help1_bg" action="#">
+	<div data-floor="floor1" class="help1 width clearfix">
+		<h1 class="centered">Пожертвование онлайн</h1>
+		<div class="help__paytext centered">Сумма пожертвования</div>
+		<div class="help__btntabs_wrapper">
+			<div class="help__btntabs">
+				<a class="js-btntab_price help__btntab" href="#"><span>100 ₽</span></a><!-- 
+			 --><a class="js-btntab_price help__btntab" href="#"><span>259 ₽</span></a><!-- 
+			 --><a class="js-btntab_price help__btntab" href="#"><span>500 ₽</span></a><!-- 
+			 --><a class="js-btntab_price help__btntab" href="#"><span>1 000 ₽</span></a><!-- 
+			 --><a class="js-btntab_price help__btntab js-btntab_price_another help__btntab_another" href="#">
+					<span>Другая сумма</span>
+					<input type="text">
+				</a>
+			</div>
+		</div>
+
+
+		<div class="help__paytext centered">Способы оплаты</div>
+		<div class="help__btntabs_type clearfix">
+			<div class="grid lg3 md3 sm12">
+				<a class="help__btntab js-btntab_paytype help__btntab_paytype help__btntab_paytype_1 pseudoactive" href="#"> <span><span>Visa / MasterCard</span></span></a>
+			</div><!-- 
+		--><div class="grid lg3 md3 sm12">
+				<a class="help__btntab js-btntab_paytype help__btntab_paytype help__btntab_paytype_2" href="#"> <span><span>Яндекс.Деньги</span></span></a>
+			</div><!-- 
+		--><div class="grid lg3 md3 sm12">
+				<a class="help__btntab js-btntab_paytype help__btntab_paytype help__btntab_paytype_3" href="#"> <span><span>Web Money</span></span></a>
+			</div><!-- 
+		--><div class="grid lg3 md3 sm12">
+				<a class="help__btntab js-btntab_paytype help__btntab_paytype help__btntab_paytype_4" href="#"> <span><span>PayPal</span></span></a>
+			</div><!-- 
+		 --><div class="grid lg3 md3 sm12">
+				<a class="help__btntab js-btntab_paytype help__btntab_paytype help__btntab_paytype_5" href="#"> <span><span>Сбербанк</span></span></a>
+			</div><!-- 
+		 --><div class="grid lg3 md3 sm12">
+				<a class="help__btntab js-btntab_paytype help__btntab_paytype help__btntab_paytype_6" href="#"> <span><span>Альфа-Клик</span></span></a>
+			</div><!-- 
+		 --><div class="grid lg3 md3 sm12">
+				<a class="help__btntab js-btntab_paytype help__btntab_paytype help__btntab_paytype_7" href="#"> <span><span>ROBOKASSA</span></span></a>
+			</div>
+			<div class="mobile_only bank__btntabs_type clearfix">
+				<select name="js-bank__btntabs_type" id="bank__btntabs_type" class="js-bank__btntabs_type">
+					<option value=".help__btntab_paytype_1">Visa / MasterCard</option>
+					<option value=".help__btntab_paytype_2">Яндекс.Деньги</option>
+					<option value=".help__btntab_paytype_3">Web Money</option>
+					<option value=".help__btntab_paytype_4">PayPal</option>
+					<option value=".help__btntab_paytype_5">Сбербанк</option>
+					<option value=".help__btntab_paytype_6">Альфа-Клик</option>
+					<option value=".help__btntab_paytype_7">ROBOKASSA</option>
+				</select>
+			</div>
+		</div>
+		<div class="help__paytext centered">Немного информации о нас</div>
+		<div class="help__btntabs_info">
+			<div class="help__btntabs_input">
+				<input type="text" name="fname" placeholder="Ваше имя">
+			</div><!-- 
+		 --><div class="help__btntabs_input">
+				<input class="customMail" type="text" name="fmail" placeholder="Ваш E-mail">
+			</div>
+		</div>
+	</div>
+
+	<div class="help__results js-help__results" style="display: none;">
+		<div class="help__result">
+			<input type="hidden" name="typeprice" id="js-typeprice" value="">
+			<input type="hidden" name="valueprice" id="js-pricevalue" value="">
+			<div class="help__result_answer text">
+				<span class="js-price"></span> через <span class="js-paytype"></span>
+			</div>
+			<div class="help__result_button">
+				<a href="#" class="btn blue v">Пожертвовать</a>
+			</div>
+		</div>
+	</div>
+	</form>
+
+	<div class="help__bank_wrapper">
+		<h1 class="centered">Пожертвование через банк</h1>
+		<div class="help__banks width clearfix">
+			<div class="clearfix">
+				<div class="help__selectbank mobile_only">
+					<select class="js-help__selectbank" name="fbank" id="fbank">
+						<option value="0">Сбербанк</option>
+						<option value="1">Альфа-Банк</option>
+						<option value="2">ЭнергоТрансБанк</option>
+						<option value="3">ВТБ</option>
+						<option value="4">Тинькофф Банк</option>
+					</select>
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="help__bank current">
+					<div class="help__bank_img">
+						<img src="./production/img/bank/bank-logo-1.png" alt="">
+						<div class="ic_more">
+							<div class="ic_more_popup clearfix">
+								<div class="ic_more_popup_bottom clearfix">
+									<a href="#">Скачать PDF квитанции</a>
+								</div>
+								<div class="ic_more_popup_bottom clearfix">
+									<a href="#">Скачать XLS квитанции</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="help__bank_title">
+						Сбербанк
+					</div>
+					<div class="help__bank_btn">
+						<a href="#" class="btn blue rounded">Распечатать квитанцию</a>
+					</div>
+				</div>
+
+				<div class="help__bank">
+					<div class="help__bank_img">
+						<img src="./production/img/bank/bank-logo-2.png" alt="">
+						<div class="ic_more">
+							<div class="ic_more_popup clearfix">
+								<div class="ic_more_popup_bottom clearfix">
+									<a href="#">Скачать PDF квитанции</a>
+								</div>
+								<div class="ic_more_popup_bottom clearfix">
+									<a href="#">Скачать XLS квитанции</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="help__bank_title">
+						Альфа-Банк
+					</div>
+					<div class="help__bank_btn">
+						<a href="#" class="btn blue rounded">Распечатать квитанцию</a>
+					</div>
+				</div>
+
+				<div class="help__bank">
+					<div class="help__bank_img">
+						<img src="./production/img/bank/bank-logo-3.png" alt="">
+						<div class="ic_more">
+							<div class="ic_more_popup clearfix">
+								<div class="ic_more_popup_bottom clearfix">
+									<a href="#">Скачать PDF квитанции</a>
+								</div>
+								<div class="ic_more_popup_bottom clearfix">
+									<a href="#">Скачать XLS квитанции</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="help__bank_title">
+						ЭнергоТрансБанк
+					</div>
+					<div class="help__bank_btn">
+						<a href="#" class="btn blue rounded">Распечатать квитанцию</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="clearfix">
+				<div class="help__bank">
+					<div class="help__bank_img">
+						<img src="./production/img/bank/bank-logo-4.png" alt="">
+						<div class="ic_more">
+							<div class="ic_more_popup clearfix">
+								<div class="ic_more_popup_bottom clearfix">
+									<a href="#">Скачать PDF квитанции</a>
+								</div>
+								<div class="ic_more_popup_bottom clearfix">
+									<a href="#">Скачать XLS квитанции</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="help__bank_title">
+						ВТБ
+					</div>
+					<div class="help__bank_btn">
+						<a href="#" class="btn blue rounded">Распечатать квитанцию</a>
+					</div>
+				</div>
+
+				<div class="help__bank">
+					<div class="help__bank_img">
+						<img src="./production/img/bank/bank-logo-5.png" alt="">
+						<div class="ic_more">
+							<div class="ic_more_popup clearfix">
+								<div class="ic_more_popup_bottom clearfix">
+									<a href="#">Скачать PDF квитанции</a>
+								</div>
+								<div class="ic_more_popup_bottom clearfix">
+									<a href="#">Скачать XLS квитанции</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="help__bank_title">
+						Тинькофф Банк
+					</div>
+					<div class="help__bank_btn">
+						<a href="#" class="btn blue rounded">Распечатать квитанцию</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div data-floor="floor2" class="publications_volunteer">
+		<div class="clearfix width">
+			<h1 class="centered">Волонтёрам</h1>
+			<div class="publications__big_photo_wrap">
+				<div class="publications__big_photo">
+					<img src="./production/img/_work/publications_volunteer.png" alt="">
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="grid lg6 md6 sm12">
+					<b>Как вы можете нам помочь?</b>
+					<p class="publications__big_photo_text">
+						Понятие тоталитаризма, короче говоря, поразительно. Исчисление предикатов трогательно наивно. Политическая психология иллюстрирует неоднозначный коллапс Советского Союза. 
+					</p>
+				</div>
+				<div class="grid lg6 md6 sm12">
+					<b>Как мы работаем с волонтёрами?</b>
+					<p class="publications__big_photo_text">
+						Исчисление предикатов самопроизвольно. Адживика, на первый взгляд, транспонирует марксизм. Язык образов, с другой стороны, рассматривается структурализм.
+					</p>
+				</div>
+			</div>
+			<div class="publications__big_photo_button clearfix">
+				<div class="centered">
+					<a href="#" class="btn blue v">Связаться с нами</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-floor="floor3" class="width bigtables clearfix">
+		<h1 class="centered">Файлы</h1>
+		<div class="publications_text text centered">Некоторые сметы и бюджет</div>
+		<div class="grid lg12 md12 sm12">
+			<div class="bigtable clearfix">
+			<div class="bigtable__inner clearfix">
+				<div class="bigtable__body">
+					<div class="bigtable__table">
+						<div class="bigtable__tr bigtable__tr_header mobile_only clearfix">
+							<div class="bigtable__td pd0">Документ</div>
+						</div>
+						<div class="bigtable__tr bigtable__tr_header desktop_only clearfix">
+							<div class="bigtable__td bigtable__td_1 grid lg6 md8 sm12">Документ</div>
+							<div class="bigtable__td grid lg2 md2 sm6">Опубликован</div>
+							<div class="bigtable__td grid lg4 md2 sm6">Скачать</div>
+						</div>
+						<div class="js-bigtable__tr bigtable__tr clearfix">
+							<div class="bigtable__td bigtable__td_1 grid lg6 md8 sm12"><a href="#">Строительство трассы №600 (Санкт-Петербург) - Бюджет</a></div>
+							<div class="bigtable__td grid lg2 md2 sm6">09.06.2016</div>
+							<div class="bigtable__td bigtable__td_3 grid lg4 md2 sm6">
+								<div class="js-bigtable__buttons bigtable__buttons">
+									<div class="bigtable__button">
+										<a href="#" class="btn download">PDF</a>
+									</div>
+									<div class="bigtable__button">
+										<a href="#" class="btn download">CSV</a>
+									</div>
+								</div>
+
+								<div class="bigtable__button more">
+									<div class="ic_more">
+										<div class="ic_more_popup download clearfix">
+											<div class="ic_more_popup_link clearfix">
+												<a href="#" class="btn download">PDF</a>
+											</div>
+											<div class="ic_more_popup_link clearfix">
+												<a href="#" class="btn download">CSV</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="js-bigtable__tr bigtable__tr clearfix">
+							<div class="bigtable__td bigtable__td_1 grid lg6 md8 sm12"><a href="#">Закупка питания - Этап 1,2,3,4 - Бюджет</a></div>
+							<div class="bigtable__td grid lg2 md2 sm6">10.06.2016</div>
+							<div class="bigtable__td bigtable__td_3 grid lg4 md2 sm6">
+								<div class="js-bigtable__buttons bigtable__buttons">
+									<div class="bigtable__button">
+										<a href="#" class="btn download">PDF</a>
+									</div>
+									<div class="bigtable__button">
+										<a href="#" class="btn download">CSV</a>
+									</div>
+								</div>
+
+								<div class="bigtable__button more">
+									<div class="ic_more">
+										<div class="ic_more_popup download clearfix">
+											<div class="ic_more_popup_link clearfix">
+												<a href="#" class="btn download">PDF</a>
+											</div>
+											<div class="ic_more_popup_link clearfix">
+												<a href="#" class="btn download">CSV</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="js-bigtable__tr bigtable__tr clearfix">
+							<div class="bigtable__td bigtable__td_1 grid lg6 md8 sm12"><a href="#">Закупка питания - Этап 5 (Финал) - Бюджет</a></div>
+							<div class="bigtable__td grid lg2 md2 sm6">11.06.2016</div>
+							<div class="bigtable__td bigtable__td_3 grid lg4 md2 sm6">
+								<div class="js-bigtable__buttons bigtable__buttons">
+									<div class="bigtable__button">
+										<a href="#" class="btn download">PDF</a>
+									</div>
+									<div class="bigtable__button">
+										<a href="#" class="btn download">CSV</a>
+									</div>
+								</div>
+
+								<div class="bigtable__button more">
+									<div class="ic_more">
+										<div class="ic_more_popup download clearfix">
+											<div class="ic_more_popup_link clearfix">
+												<a href="#" class="btn download">PDF</a>
+											</div>
+											<div class="ic_more_popup_link clearfix">
+												<a href="#" class="btn download">CSV</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="js-bigtable__tr bigtable__tr clearfix">
+							<div class="bigtable__td bigtable__td_1 grid lg6 md8 sm12"><a href="#">Подготовка проведения финала - Мурманск (Смета)</a></div>
+							<div class="bigtable__td grid lg2 md2 sm6">12.06.2016</div>
+							<div class="bigtable__td bigtable__td_3 grid lg4 md2 sm6">
+								<div class="js-bigtable__buttons bigtable__buttons">
+									<div class="bigtable__button">
+										<a href="#" class="btn download">PDF</a>
+									</div>
+									<div class="bigtable__button">
+										<a href="#" class="btn download">CSV</a>
+									</div>
+								</div>
+
+								<div class="bigtable__button more">
+									<div class="ic_more">
+										<div class="ic_more_popup download clearfix">
+											<div class="ic_more_popup_link clearfix">
+												<a href="#" class="btn download">PDF</a>
+											</div>
+											<div class="ic_more_popup_link clearfix">
+												<a href="#" class="btn download">CSV</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="js-bigtable__tr bigtable__tr clearfix">
+							<div class="bigtable__td bigtable__td_1 grid lg6 md8 sm12"><a href="#">Подготовка проведения финала - Мурманск (Факт. бюджет)</a></div>
+							<div class="bigtable__td grid lg2 md2 sm6">12.07.2016</div>
+							<div class="bigtable__td bigtable__td_3 grid lg4 md2 sm6">
+								<div class="js-bigtable__buttons bigtable__buttons">
+									<div class="bigtable__button">
+										<a href="#" class="btn download">PDF</a>
+									</div>
+									<div class="bigtable__button">
+										<a href="#" class="btn download">CSV</a>
+									</div>
+								</div>
+
+								<div class="bigtable__button more">
+									<div class="ic_more">
+										<div class="ic_more_popup download clearfix">
+											<div class="ic_more_popup_link clearfix">
+												<a href="#" class="btn download">PDF</a>
+											</div>
+											<div class="ic_more_popup_link clearfix">
+												<a href="#" class="btn download">CSV</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-floor="floor4" class="publications_block_wrap clearfix">
+		<h1 class="centered">Публикации</h1>
+		<div class="publication_block_wrap" data-include-html='newsblock.html'></div>
+	</div>
+
+	<div data-include-html='footer.html'></div>
+	<div data-include-html='popups.html'></div>
+</body>
+</html>

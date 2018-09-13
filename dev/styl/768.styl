@@ -1,0 +1,475 @@
+@media screen and (min-width 760px) and (max-width 1199px)
+
+
+    .mobile_only
+        display: none;
+    .desktop_only
+        display: block;
+
+    .bg_item_1
+        top: 40px;
+        right: 0;
+        width: 40%;
+    .bg_item_2
+        display: none;
+
+    .mainmenu
+
+        &__links
+            padding-left: 10px;
+        &__soc
+            padding-right: 25px;
+            li
+                &.notablet
+                    display: none;
+
+    .floormenu
+        padding: 14px 0 18px;
+        &.active
+            border-radius: 3px;
+            margin-top: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 1px 3px 0px rgba(1, 67, 135, 0.3);
+            padding-top: 0;
+            .floormenu__item
+                display: block;
+                width: 100%;
+                margin: 0;
+                border-bottom: 1px solid #c9ddea;
+                padding: 7px 0 6px 0;
+                &_menu
+                    border: none;
+                    span
+                        color: color_orange;
+                        border-color: transparent;
+                        &:before
+                            background-position: right center;
+                span
+                    font-size: 17px;
+                    line-height: 25px;
+        &.isStuck
+            background: rgba(255, 255, 255, 0.9);
+            z-index: 100;
+            margin: 0;
+            width: 100%;
+            left: 0;
+            top: 0;
+
+        &__item
+            display: none;
+            &_menu
+                display: block;
+                margin: 0;
+                span
+                    position: relative;
+                    margin-left: 20px;
+                    letter-spacing: 0.5px;
+                    &:before
+                        position: absolute;
+                        left: -20px;
+                        top: 5px;
+                        width: 13px;
+                        height: 12px;
+                        display: block;
+                        content: "";
+                        background: url(../img/ic/ic_floormenu.png) left center no-repeat;
+
+    .postheader
+
+        &__logo
+            width: 42%;
+            a
+                &:after
+                    top: -16px;
+                    left: 1%;
+
+        &__slogan
+            margin-top: 12px;
+            margin-left: 27px;
+            padding-left: 10px;
+
+        .md6-postheader_l
+            float: left;
+            width: 52.5%;
+            margin: 0 0 0 1%;
+        .md6-postheader_r
+            float: left;
+            width: 45%;
+            margin: 0 1% 0 0;
+        &__lang
+            margin-top: 32px;
+            width: 30%;
+            li
+                margin-right: 10px;
+        &__brand
+            margin-top: 40px;
+            width: 70%;
+            a
+                padding: 0 10px 0 20px;
+
+    .actbar
+        margin-top: 13px;
+        height: 64px;
+        position: relative;
+        line-height: 50px;
+        >.width
+            width: 97%;
+            margin: 0 1.5%;
+        &_l
+            float: left;
+            width: 26%;
+            text-align: center;
+            padding: 0 10px;
+            a
+                line-height: 20px;
+                font-size: 21px;
+                left: 0;
+        &__textlogo
+            line-height: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            top: -2px;
+            position: relative;
+        &_r
+            float: left;
+            width: 74%;
+            .actbar_link
+                .actbar_faq
+                    &-1920
+                        display: none;
+                    &-768
+                        display: inline-block;
+        &_rl
+            float: left;
+            width: 10%;
+            .actbar_link
+                padding: 0 6px;
+                padding-right: 12px;
+                margin-left: 8px;
+                span
+                    margin: 0;
+                    padding: 0;
+        &_rr
+            float: right;
+            width: 90%;
+            text-align: right;
+            .actbar_link
+                color: #fff;
+                &.actbar_1
+                    padding-right: 25px;
+                    span
+                        margin: 0 0px 0 36px;
+                &.actbar_2
+                    padding-right: 25px;
+                    padding-left: 20px;
+                    span
+                        margin: 0 1px 0 31px;
+                &.actbar_3
+                    padding-right: 20px;
+                    span
+                        margin: 0 3px 0 34px;
+
+    .news_actual
+        padding-top: 38px;
+        padding-bottom: 28px;
+        margin: 0 auto;
+        &_dayvideo
+            padding: 0px;
+            .news_actual__big_video_wrap
+                iframe
+                    height: 450px;
+        &_dayphoto
+            width: 100%;
+            padding: 38px 20px 28px 20px;
+            .news_actual__descr
+                .news_actual__title
+                    margin-top: 14px;
+        &__photo_slider
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+        &__pinned
+            // margin-top: 20px;
+            margin-top: 0;
+        &__title
+            padding-right: 20%;
+        &__text
+            margin: 16px 0 25px;
+        &__descr
+            padding: 0;
+            padding-left: 15px;
+        &__photo_wrap
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+
+    .news_block
+        margin-top: 22px;
+        margin-bottom: 19px;
+        &__item
+            width: 47.395833333333336%;
+            margin: 0 1.302083333333333% 28px;
+            height: 468px;
+    
+    .idea_block
+        padding-bottom: 0;
+        &__item
+            &.quote
+                span
+                    padding-bottom: 0px;
+                .idea_block__text
+                    padding-left: 55%;
+
+    .ic_more_popup
+        .ic_more_popup_social
+            &.yesdesktop
+                display: block;
+            &.yestablet
+                display: block;
+
+
+    .comment
+        &__mobile,
+        &__desktop
+            display: none;
+        &__tablet
+            display: block;
+
+    // 
+    // ABOUT
+    // 
+
+    .bigfilter
+        &__body
+            &_flags
+                &:after,
+                &:before
+                    display: none;
+
+    .floor0
+        &>.width
+            background: none;
+        .floor0video
+            margin: 0 auto;
+            max-width: 671px;
+            text-align: center;
+            padding: 0 41px;
+            margin: 0 -41px;
+            display: inline-block;
+        .floor0video_wrapper
+            float: none;
+            text-align: center;
+
+    .floor1
+        padding: 25px 0 80px 0;
+        &__group
+            margin: 0;
+            &:before
+                display: none;
+    .floor2
+        &__bg
+            background-size: cover;
+            height: 260px;
+            margin-bottom: 10px;
+
+    .floor3
+        &__program
+            width: 100%;
+            text-align: center;
+            &__item
+                display: inline-block;
+                float: none;
+                vertical-align: top;
+                min-height: 200px;
+                &_false
+                    float: none;
+                    clear: both;
+                    background: none;
+                    display: block;
+                    width: 100%;
+                    height: 0;
+                    min-height: 35px;
+                    &:after
+                        display: none;
+    
+    .floor4
+        padding-bottom: 18px;
+
+    .floor5
+        &_img2
+            top: 0;
+        &_img3
+            top: 80px;
+            left: -185px;
+        &_img5
+            top: 40px;
+            left: -160px;
+        &_img7
+            top: 15px;
+
+    .floor6
+        padding-bottom: 50px;
+        &__item
+            margin-bottom: 60px;
+        &__img
+            height: 115px;
+            padding: 15px;
+            img
+                max-height: 100%;
+                width: auto;
+
+    .floor7
+        &__text
+            padding-bottom: 27px;
+        &__friendnames
+            padding: 3px 5px 26px 5px;
+        .msupport
+            background: url(../img/bg/bg_msupport_md.png) center bottom no-repeat;
+            &__img
+                margin-top: 5px;
+                padding: 0 20px;
+
+    .floor8
+        padding-top: 48px;
+        h1
+            margin-bottom: 72px;
+
+    .floor9
+        .timing
+            margin-top: 40px;
+            margin-bottom: 26px;
+        .gun
+            margin-bottom: 30px;
+            &__img
+                height: 160px;
+
+    .floor10
+        padding: 0;
+        &__description2
+            .grid
+                margin-bottom: 50px;
+
+    .faq
+        padding-right: 25px;
+
+    .help
+        &__img
+            margin-top: 60px;
+        &__text
+            margin-top: 37px;
+        &__linelink
+            padding: 26px 40px;
+        &__bank
+            margin: 28px 1% 24px;
+            &_wrapper
+                padding: 28px 0 0 0;
+    
+    .sidebar
+        padding-right: 15px;
+        
+    .textpage
+        &__title
+            width: 750px;
+    .node
+        position: relative;
+        .table
+            width: 100%;
+            overflow: hidden;
+            overflow-x: auto;
+            margin-bottom: 18px;
+            padding-bottom: 20px;
+            table
+                margin-bottom: 15px;
+            &:after
+                position: absolute;
+                display: block;
+                height: 20px;
+                content: "Таблица прокручивается";
+                background: url(../img/ic/ic_swipe.png) left center no-repeat;
+                padding-left: 25px;
+                font: 300 14px/20px 'Roboto Condensed Light', font;
+                color: #999999;
+                left: -5px;
+
+    // 
+    // FOOTER
+    // 
+
+    .partners
+        &__title
+            padding: 36px 0 21px;
+        &__blocks
+            margin-bottom: 63px;
+        &__block
+            padding: 0 20px;
+    .subscribe
+        &__title
+            position: relative;
+            top: 5px;
+    .footer
+        &__link
+            padding-right: 20px;
+
+@media screen and (min-width 760px) and (max-width 960px)
+
+    .mainmenu
+        &__links
+            li
+                a
+                    span.rounded
+                        width: 90%;
+
+    .news_actual
+        max-width: 555px;
+        &.news_actual_dayvideo
+                max-width: 100%;
+        &__pinned
+            margin-top: 20px;
+        &_lphoto
+            .news_actual__photo
+                float: none;
+                width: 100%;
+            .news_actual__descr
+                float: none;
+                width: 100%;
+                padding-right: 0;
+        &_rphoto
+            .news_actual__photo
+                float: none;
+                width: 100%;
+            .news_actual__descr
+                float: none;
+                width: 100%;
+                padding-right: 0;
+
+    .bigfilter
+        background: none;
+        &__round
+            width: 127px;
+            height: 127px;
+            font-size: 20px;
+            >span
+                padding: 0;
+        &__year
+            &:before
+                left: -1em;
+                width: 20%;
+                margin: 0 0 0 -20%;
+            &:after
+                left: 1em;
+                width: 35%;
+                margin: 0 -35% 0 0;
+
+@media screen and (min-width 960px) and (max-width 1199px)
+    .news_block
+        &__item
+            width: 30.83333333333333%;
+            margin: 0 1.25% 28px;
+    .mediablock
+        &__item
+            width: 30.83333333333333%;
+            margin: 0 1.25% 25px;
+    .actbar
+        &_l
+            a
+                font-size: 24px;

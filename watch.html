@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="production/css/style.min.css">
+	<script src="production/js/scripts.min.js"></script>
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<script src="https://use.typekit.net/jbw2und.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div data-include-html='mainmenu.html'></div>
+	<div data-include-html='header.html'></div>
+
+	<div class="news_actual news_actual_dayvideo clearfix">
+		<div class="width clearfix">
+		<div class="news_actual__descr">
+			<h1 class="centered realtime">
+				Онлайн-трансляция
+				<span class="realtime">Прямой эфир</span>
+			</h1>
+		</div>
+		<div class="news_actual__video">
+			<div class="news_actual__big_video_wrap">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/QR9jZjsvGN4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="news_actual__socials">
+			<img class="desktop_only" src="./production/img/_work/news_socials.png" alt="">
+			<img class="mobile_only" src="./production/img/_work/news_socials_320.png" alt="">
+		</div>
+		</div>
+	</div>
+	<div class="video_block_wrapper">
+		<div class="video_block_header clearfix">
+			<h2 class="centered">Предыдущие трансляции</h2>
+		</div>
+		<div class="video_block_wrap clearfix" data-include-html='videoblock.html'></div>
+		<div class="video_block_textline clearfix">
+			<p class="centered">
+				Все прошедшие трансляции вы можете найти в разделе <a href="#">Фото и Видео</a>
+			</p>
+		</div>
+	</div>
+
+	<div data-include-html='footer.html'></div>
+	<div data-include-html='popups.html'></div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+.grid
+    border none
+    float left
+    box-sizing border-box
+    background-clip padding-box !important
+
+grid(num, mrgn, max_columns)
+    width 100% * (num/max_columns) - 2 * mrgn
+
+
+/* 1. 12 Column Grid 0px - 760px
+-----------------------------------------------------------------------------
+
+grid 1    8.33333333333%
+grid 2    16.6666666667%
+grid 3    25.0%
+grid 4    33.3333333333%
+grid 5    41.6666666667%
+grid 6    50.0%
+grid 7    58.3333333333%
+grid 8    66.6666666667%
+grid 9    75.0%
+grid 10    83.3333333333%
+grid 11    91.6666666667%
+grid 12    100%
+
+----------------------------------------------------------------------------- */
+
+@media screen and (min-width 0px) and (max-width 760px)
+
+    /* --- Gridpak variables ---*/
+    max_columns = 12
+    mrgn = (5.5/(2*320))*100%
+
+    .width
+        margin 0 auto
+        width 100%
+        padding 0 2%;
+
+    .row
+        margin 0
+    
+    .grid
+        padding 0
+        margin 0 mrgn
+
+    .sm0
+        display: none;
+    .sm1
+        grid(1, mrgn, max_columns)
+    .sm2
+        grid(2, mrgn, max_columns)
+    .sm3
+        grid(3, mrgn, max_columns)
+    .sm4
+        grid(4, mrgn, max_columns)
+    .sm5
+        grid(5, mrgn, max_columns)
+    .sm6
+        grid(6, mrgn, max_columns)
+    .sm7
+        grid(7, mrgn, max_columns)
+    .sm8
+        grid(8, mrgn, max_columns)
+    .sm9
+        grid(9, mrgn, max_columns)
+    .sm10
+        grid(10, mrgn, max_columns)
+    .sm11
+        grid(11, mrgn, max_columns)
+    .sm12
+        grid(12, mrgn, max_columns)
+
+/* 2. 12 Column Grid 760px - 1199px
+-----------------------------------------------------------------------------
+
+grid 1    8.33333333333%
+grid 2    16.6666666667%
+grid 3    25.0%
+grid 4    33.3333333333%
+grid 5    41.6666666667%
+grid 6    50.0%
+grid 7    58.3333333333%
+grid 8    66.6666666667%
+grid 9    75.0%
+grid 10    83.3333333333%
+grid 11    91.6666666667%
+grid 12    100%
+
+----------------------------------------------------------------------------- */
+
+@media screen and (min-width 760px) and (max-width 1199px)
+
+    /* --- Gridpak variables ---*/
+    max_columns = 12
+    mrgn = (10/768)*100%
+
+    .width
+        margin 0 auto
+        width 100%;
+        position: relative;
+        z-index: 1;
+
+    .row
+        margin-left0
+    
+    .grid
+        padding 0
+        margin 0 mrgn
+
+    .md0
+        display: none;
+    .md1
+        grid(1, mrgn, max_columns)
+    .md2
+        grid(2, mrgn, max_columns)
+    .md3
+        grid(3, mrgn, max_columns)
+    .md4
+        grid(4, mrgn, max_columns)
+    .md5
+        grid(5, mrgn, max_columns)
+    .md6
+        grid(6, mrgn, max_columns)
+    .md7
+        grid(7, mrgn, max_columns)
+    .md8
+        grid(8, mrgn, max_columns)
+    .md9
+        grid(9, mrgn, max_columns)
+    .md10
+        grid(10, mrgn, max_columns)
+    .md11
+        grid(11, mrgn, max_columns)
+    .md12
+        grid(12, mrgn, max_columns)
+
+/* 3. 12 Column Grid 1200px - Infinity
+-----------------------------------------------------------------------------
+
+grid 1    8.33333333333%
+grid 2    16.6666666667%
+grid 3    25.0%
+grid 4    33.3333333333%
+grid 5    41.6666666667%
+grid 6    50.0%
+grid 7    58.3333333333%
+grid 8    66.6666666667%
+grid 9    75.0%
+grid 10    83.3333333333%
+grid 11    91.6666666667%
+grid 12    100%
+
+----------------------------------------------------------------------------- */
+
+@media screen and (min-width 1200px)
+
+    /* --- Gridpak variables ---*/
+    max_columns = 12
+    mrgn = (15/1200)*100%
+
+    .width
+        margin 0 auto
+        width 1200px
+        position: relative;
+        z-index: 1;
+
+    .row
+        margin 0
+    
+    .grid
+        padding 0
+        margin 0 mrgn
+
+    .lg0
+        display: none;
+    .lg1
+        grid(1, mrgn, max_columns)
+    .lg2
+        grid(2, mrgn, max_columns)
+    .lg3
+        grid(3, mrgn, max_columns)
+    .lg4
+        grid(4, mrgn, max_columns)
+    .lg5
+        grid(5, mrgn, max_columns)
+    .lg6
+        grid(6, mrgn, max_columns)
+    .lg7
+        grid(7, mrgn, max_columns)
+    .lg8
+        grid(8, mrgn, max_columns)
+    .lg9
+        grid(9, mrgn, max_columns)
+    .lg10
+        grid(10, mrgn, max_columns)
+    .lg11
+        grid(11, mrgn, max_columns)
+    .lg12
+        grid(12, mrgn, max_columns)
+

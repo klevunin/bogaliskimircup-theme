@@ -1,0 +1,616 @@
+<div class="popup_window thanksubscribe">
+    <div class="popup_inner">
+        <div class="popup_title centered">
+            Заявка на подписку <br> была подтверждена
+            <div class="popup_close"></div>
+        </div>
+        <div class="popup_content centered clearfix">
+            <p class="popup_info">Ящик roman@tmean.ru успешно подписан. Вы будете получать уведомления и новости.</p>
+        </div>
+    </div>
+</div>
+
+<div class="popup_window request">
+    <div class="popup_inner">
+        <div class="popup_title centered">
+            Подать заявку <br>на участие
+            <div class="popup_close"></div>
+        </div>
+        <div class="popup_content clearfix">
+            <div class="popup__etp centered">Этап 1. Южно-Сахалинск</div>
+            <div class="popup__tabs">
+                <div class="tabs"><!-- 
+                     --><div class="tab first">
+                            <a class="active" data-pane=".group" href="#">Групповая заявка</a>
+                        </div><!-- 
+                     --><div class="tab last">
+                            <a href="#" data-pane=".individual">Индивидуальная</a>
+                        </div><!-- 
+                 --></div>
+            </div>
+            <div class="pane group clearfix">
+            <form action="/">
+                <div class="popup__fieldset clearfix">
+                    <div class="popup__fieldset_title">Область, населённый пункт</div>
+
+                    <div class="popup__field">
+                        <label for="foblast">Область</label>
+                        <input type="text" name="foblast" id="foblast">
+                    </div>
+
+                    <div class="popup__field">
+                        <label for="fnaselennpunkt">Населённый пункт</label>
+                        <input type="text" name="fnaselennpunkt" id="fnaselennpunkt">
+                    </div>
+                </div>
+
+                <div class="popup__fieldset clearfix">
+                    <div class="popup__fieldset_title">Командирующая организация</div>
+
+                    <div class="popup__field">
+                        <label for="fnameorg">Название организации</label>
+                        <input type="text" name="fnameorg" id="fnameorg" required="required">
+                    </div>
+
+                    <div class="popup__field">
+                        <label for="fphone">Телефон</label>
+                        <input class="customPhone" type="text" name="fphone" id="fphone">
+                    </div>
+
+                    <div class="popup__field">
+                        <label for="fmail">E-mail</label>
+                        <input class="customMail" type="text" name="fmail" id="fmail">
+                    </div>
+
+                    <div class="popup__field">
+                        <label for="fusercontact">Контактное лицо</label>
+                        <input type="text" name="fusercontact" id="fusercontact">
+                    </div>
+                </div>
+
+                <div class="popup__fieldset clearfix">
+                    <div class="popup__fieldset_title">
+                        Тренеры <span>(сопровождение)</span>
+                        <div class="fright">Макс. 4 чел.</div>
+                    </div>
+                    <div class="popup__fold">
+                        <div class="popup__fold_title js-popup__fold_title">№ <span></span>
+                            <i class="js-fold_button_delete fold_button_delete"></i>
+                        </div>
+                        <div class="popup__fold_body">
+                            <div class="popup__field">
+                                <label for="fusercontact01">ФИО</label>
+                                <input type="text" name="fusercontact01" id="fusercontact01">
+                            </div>
+
+                            <div class="popup__field">
+                                <label for="fphone">Телефон</label>
+                                <input class="customPhone" type="text" name="fphone2" id="fphone2">
+                            </div>
+
+                            <div class="popup__field">
+                                <label for="fmail">E-mail</label>
+                                <input class="customMail" type="text" name="fmail2" id="fmail2">
+                            </div>
+
+                            <div class="popup__field">
+                                <label for="fphoto">Фотография</label>
+                                <!-- <input type="file" name="fphoto2" id="fphoto3"> -->
+                                <div class="clearfix">
+                                    <div class="popup__fold_avatar"></div>
+                                    <div class="popup__fold_btnupld">
+                                        <a href="#" class="btn rounded blue">
+                                            Добавить
+                                            <input type="file" class="btnupld__avatar">
+                                        </a>
+                                        <a href="#" class="btn rounded blue btnupld__delete" data-img='./production/img/bg/bg_trainer-photo_filler.png'>
+                                            Удалить
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="popup__fold_button">
+                        <a href="#" class="btn rounded blue js-fold_button_add" data-maxcount="4">
+                            <img src="./production/img/ic/ic_plus-add.png" height="17" width="17" alt="">
+                            <b>Добавить тренера</b>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="popup__fieldset clearfix">
+                    <div class="popup__fieldset_title">
+                        Участники <span>(спортсмены)</span>
+                        <div class="fright">Макс. 24 чел.</div>
+                    </div>
+                    <div class="popup__fold">
+                        <div class="popup__fold_title js-popup__fold_title">№ <span></span>
+                            <i class="js-fold_button_delete fold_button_delete"></i>
+                        </div>
+                        <div class="popup__fold_body">
+                            <div class="popup__field">
+                                <label for="fusercontact2">ФИО</label>
+                                <input type="text" name="fusercontact2" id="fusercontact2">
+                            </div>
+
+                            <div class="popup__field">
+                                <label for="fdateb2">Дата рождения</label>
+                                <input type="text" name="fdateb2" id="fdateb2">
+                            </div>
+
+                            <div class="popup__field">
+                                <label for="fskill">Спорт.разряд</label>
+                                <input class="customMail" type="text" name="fskill" id="fskill">
+                            </div>
+
+                            <div class="popup__field">
+                                <label for="fskill">Пол</label>
+                                <select name="fsex" id="fsex">
+                                    <option value="M">Мужской</option>
+                                    <option value="W">Женский</option>
+                                </select>
+                            </div>
+
+                            <div class="popup__field">
+                                <label for="fphoto">Фотография</label>
+                                <!-- <input type="file" name="fphoto2" id="fphoto3"> -->
+                                <div class="clearfix">
+                                    <div class="popup__fold_avatar"></div>
+                                    <div class="popup__fold_btnupld">
+                                        <a href="#" class="btn rounded blue">
+                                            Добавить
+                                            <input type="file" class="btnupld__avatar">
+                                        </a>
+                                        <a href="#" class="btn rounded blue btnupld__delete" data-img='./production/img/bg/bg_trainer-photo_filler.png'>
+                                            Удалить
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup__fold_button">
+                        <a href="#" class="btn rounded blue js-fold_button_add" data-maxcount="24">
+                            <img src="./production/img/ic/ic_plus-add.png" height="17" width="17" alt="">
+                            <b>Добавить участника</b>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="popup__fieldset clearfix">
+                    <div class="popup__fieldset_title">Дополнительная информация</div>
+
+                    <div class="popup__field">
+                        <label for="ftext" class="manyline">
+                            Любая информация, которую вы хотите сообщить. Например, если вам уже известно время и способ прибытия. Так же, сообщите, если участники будут использовать свои винтовки, соответствующие правилам соревнований.
+                        </label>
+
+                        <textarea name="ftext" id="ftext" placeholder="Что хотите сообщить?"></textarea>
+                    </div>
+
+                    <div class="popup__fieldset_title">Требуется ли содействие в организации вашего проживания?</div>
+
+                    <div class="popup__field">
+                        <input type="checkbox" name="fy" id="fy"> <label for="fy" class="label__checkbox">Да, требуется</label>
+                    </div>
+
+                    <div class="popup__fieldset_title">Согласие</div>
+
+                    <div class="popup__field">
+                        <input type="checkbox" name="fagree" id="fagree"> <label for="fagree" class="label__agree">Заполнением и отправкой данной регистрационной формы командирующие организации подтверждают, что ознакомлены с положением Кубка, что заявленные участники имеют соответствующую программе спортивно-техническую подготовку. Командирующие организации несут ответственность за согласие родителей несовершеннолетних спортсменов на их участие в соревновательных мероприятиях, а так же согласие на использование персональных данных участников и их изображений, полученных на мероприятии в любом формате безвозмездно для освещения и продвижения событий Кубка. При прохождении мандатной комиссии представитель команды обязуется представить документы, перечисленные в Положении.</label>
+                    </div>
+                </div>
+
+                <div class="popup__fieldset popup__fieldset_button clearfix">
+                    <a class="sendform btn blue v" href="#">Подать заявку</a>
+                </div>
+            </form>
+
+            </div>
+
+            <div class="pane individual clearfix" style="display: none;">
+                <form action="/">
+                    <div class="popup__fieldset clearfix">
+
+                        <div class="popup__description">
+                            Спортсмена сопровождает родитель.
+                            Командирующая организация отсутствует.
+                        </div>
+                        <div class="popup__fieldset_title">Область, населённый пункт</div>
+
+                        <div class="popup__field">
+                            <label for="foblast">Область</label>
+                            <input type="text" name="foblast" id="foblast">
+                        </div>
+
+                        <div class="popup__field">
+                            <label for="fnaselennpunkt">Населённый пункт</label>
+                            <input type="text" name="fnaselennpunkt" id="fnaselennpunkt">
+                        </div>
+                    </div>
+
+
+                    <div class="popup__fieldset clearfix">
+                        <div class="popup__fieldset_title">Где тренируется спортсмен?</div>
+                        <div class="popup__field">
+                            <label for="fnameorg">Название организации</label>
+                            <input type="text" name="fnameorg" id="fnameorg">
+                        </div>
+                    </div>
+
+                    <div class="popup__fieldset clearfix">
+                        <div class="popup__fieldset_title">Тренирующий родитель <span>(сопровождающий)</span></div>
+                        <div class="popup__fold_body">
+                        <div class="popup__field">
+                            <label for="ffio">ФИО</label>
+                            <input type="text" name="ffio" id="ffio">
+                        </div>
+
+                        <div class="popup__field">
+                            <label for="fphone">Телефон</label>
+                            <input class="customPhone" type="text" name="fphone" id="fphone">
+                        </div>
+
+                        <div class="popup__field">
+                            <label for="fmail">E-mail</label>
+                            <input class="customMail" type="text" name="fmail" id="fmail">
+                        </div>
+
+                        <div class="popup__field">
+                            <label for="fphoto">Фотография</label>
+                            <!-- <input type="file" name="fphoto2" id="fphoto3"> -->
+                            <div class="clearfix">
+                                <div class="popup__fold_avatar"></div>
+                                <div class="popup__fold_btnupld">
+                                    <a href="#" class="btn rounded blue">
+                                        Добавить
+                                        <input type="file" class="btnupld__avatar">
+                                    </a>
+                                    <a href="#" class="btn rounded blue btnupld__delete" data-img='./production/img/bg/bg_trainer-photo_filler.png'>
+                                        Удалить
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="popup__fieldset clearfix">
+                        <div class="popup__fieldset_title">
+                            Участники <span>(спортсмены)</span>
+                            <div class="fright">Макс. 2 чел.</div>
+                        </div>
+                        <div class="popup__fold">
+                            <div class="popup__fold_title js-popup__fold_title">№ <span></span>
+                                <i class="js-fold_button_delete fold_button_delete"></i>
+                            </div>
+                            <div class="popup__fold_body">
+                                <div class="popup__field">
+                                    <label for="fusercontact2">ФИО</label>
+                                    <input type="text" name="fusercontact2" id="fusercontact2">
+                                </div>
+
+                                <div class="popup__field">
+                                    <label for="fdateb2">Дата рождения</label>
+                                    <input type="text" name="fdateb2" id="fdateb2">
+                                </div>
+
+                                <div class="popup__field">
+                                    <label for="fskill">Спорт.разряд</label>
+                                    <input class="customMail" type="text" name="fskill" id="fskill">
+                                </div>
+
+                                <div class="popup__field">
+                                    <label for="fskill">Пол</label>
+                                    <select name="fsex" id="fsex">
+                                        <option value="M">Мужской</option>
+                                        <option value="W">Женский</option>
+                                    </select>
+                                </div>
+
+                                <div class="popup__field">
+                                    <label for="fphoto">Фотография</label>
+                                    <!-- <input type="file" name="fphoto2" id="fphoto3"> -->
+                                    <div class="clearfix">
+                                        <div class="popup__fold_avatar"></div>
+                                        <div class="popup__fold_btnupld">
+                                            <a href="#" class="btn rounded blue">
+                                                Добавить
+                                                <input type="file" class="btnupld__avatar">
+                                            </a>
+                                            <a href="#" class="btn rounded blue btnupld__delete" data-img='./production/img/bg/bg_trainer-photo_filler.png'>
+                                                Удалить
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup__fold_button">
+                            <a href="#" class="btn rounded blue js-fold_button_add" data-maxcount="2">
+                                <img src="./production/img/ic/ic_plus-add.png" height="17" width="17" alt="">
+                                <b>Добавить участника</b>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="popup__fieldset clearfix">
+                        <div class="popup__fieldset_title">Дополнительная информация</div>
+
+                        <div class="popup__field">
+                            <label for="ftext" class="manyline">
+                                Любая информация, которую вы хотите сообщить. Например, если вам уже известно время и способ прибытия. Так же, сообщите, если участники будут использовать свои винтовки, соответствующие правилам соревнований.
+                            </label>
+
+                            <textarea name="ftext" id="ftext" placeholder="Что хотите сообщить?"></textarea>
+                        </div>
+
+                        <div class="popup__fieldset_title">Согласие</div>
+
+                        <div class="popup__field">
+                            <input type="checkbox" name="fagree" id="fagree"> <label for="fagree" class="label__agree">Заполнением и отправкой данной регистрационной формы командирующие организации подтверждают, что ознакомлены с положением Кубка, что заявленные участники имеют соответствующую программе спортивно-техническую подготовку. Командирующие организации несут ответственность за согласие родителей несовершеннолетних спортсменов на их участие в соревновательных мероприятиях, а так же согласие на использование персональных данных участников и их изображений, полученных на мероприятии в любом формате безвозмездно для освещения и продвижения событий Кубка. При прохождении мандатной комиссии представитель команды обязуется представить документы, перечисленные в Положении.</label>
+                        </div>
+                    </div>
+
+                    <div class="popup__fieldset popup__fieldset_button clearfix">
+                        <a class="sendform btn blue v" href="#">Подать заявку</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup_window requisites">
+    <div class="popup_inner">
+        <div class="popup_title centered">
+            Реквизиты фонда
+            <div class="popup_close"></div>
+        </div>
+        <div class="popup_content clearfix">
+            <p class="popup_info">
+            ООО «Тмин»<br>
+            ИНН 3906217343<br>
+            КПП 390601001<br>
+            ОГРН 1103925010265<br>
+            Юр. адрес: 236001, Калининградская обл., г. Калининград, ул. Горького,
+            <br>
+            170а, кв. 70<br>
+            Тел. +7 9 622-522-622<br>
+            р/с 40702810100000003453 в КБ «ЭНЕРГОТРАНСБАНК» (ОАО) г. Калининград<br>
+            к/с 30101810800000000701<br>
+            БИК 042748701<br>
+            </p>
+            <br>
+        </div>
+    </div>
+</div>
+
+<div class="popup_window targets">
+    <div class="popup_inner">
+        <div class="popup_title centered">
+            Цели и задачи фонда
+            <div class="popup_close"></div>
+        </div>
+        <div class="popup_content clearfix">
+            <div class="popup_info">
+                <div class="popup_check">
+                    <span>
+                        поддержка спортивно-культурных массовых проектов, направленных на развитие детского и юношеского спорта
+                    </span>
+                </div>
+                <div class="popup_check">
+                    <span>
+                        поддержка инициатив граждан и юридических лиц, направленных на решение социальных, благотворительных, культурных, образовательных и иных общественно значимых проблем развития детско-юношеского спорта 
+                    </span>
+                </div>
+                <div class="popup_check">
+                    <span>
+                        поддержка учебных заведений, деятельность которых направлена на развитие детско-юношеского спорта 
+                    </span>
+                </div>
+                <div class="popup_check">
+                    <span>
+                        содействие деятельности в сфере профилактики и охраны здоровья подрастающего поколения, а также пропаганды здорового образа жизни
+                    </span>
+                </div>
+                <div class="popup_check">
+                    <span>
+                        оказание помощи в развитии спортивной инфраструктуры и распространении оздоровительных комплексов
+                    </span>
+                </div>
+                <div class="popup_check">
+                    <span>
+                        привлечение средств массовой информации, государственных учреждений, общественных организаций к проблемам в сфере современной культуры спорта и здорового образа жизни
+                    </span>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+
+<div class="popup_window interests">
+    <div class="popup_inner">
+        <div class="popup_title centered">
+            Какие области нам интересны?
+            <div class="popup_close"></div>
+        </div>
+        <div class="popup_content clearfix">
+            <p class="popup_info">
+            В зависимости от региона проведения Кубка, нам нужны бартерные партнеры в следующих областях: организация дополнительного питания спортсменов во время соревнований, транспортные услуги для юных участников Кубка, организация церемоний и детских шоу-программ, организация проживания для участников, рекламно-полиграфическое производство, услуги в области безопасности, услуги в области видеосъемки и онлайн-трансляции соревнований. 
+            </p>
+            <br>
+        </div>
+    </div>
+</div>
+
+<div class="popup_window sponsorship">
+    <div class="popup_inner">
+        <div class="popup_title centered">
+            Нам нужна  спонсорская помощь для решения следующих задач:
+            <div class="popup_close"></div>
+        </div>
+        <div class="popup_content clearfix">
+            <div class="popup_info">
+                <div class="popup_check">
+                    <span>
+                    финансирование аренды спортивных объектов для проведения соревнований
+                    </span>
+                </div>
+                <div class="popup_check">
+                    <span>
+                    финансирование образовательных, спортивно-оздоровительных, транспортных и иных услуг, оказываемых юным участникам Кубка
+                    </span>
+                </div>
+                <div class="popup_check">
+                    <span>
+                    поддержка учебных заведений, деятельность которых направлена на развитие детско-юношеского спорта 
+                    </span>
+                </div>
+                <div class="popup_check">
+                    <span>
+                    финансирование дополнительного питания юных атлетов во время соревнований
+                    </span>
+                </div>
+                <div class="popup_check">
+                    <span>
+                    изготовление медалей, наградных кубков, обеспечение призового фонда и подарков для награждения участников
+                    </span>
+                </div>
+                <div class="popup_check">
+                    <span>
+                    поощрение труда судейского состава при проведении соревнований
+                </div>
+
+                <div class="popup_check">
+                    <span>
+                    организация встреч и мастер-классов для детей с участием легенд российского и мирового биатлона
+                    </span>
+                </div>
+                <div class="popup_check">
+                    <span>
+                    содействие в модернизации и развитии учебной и материально-технической базы для занятия биатлоном детей в регионах
+                    </span>
+                </div>
+                <div class="popup_check">
+                    <span>
+                    содействие в снабжении детских команд спортивной экипировкой для занятия биатлоном
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+
+<div class="popup_window sendrequest">
+    <div class="popup_inner">
+        <div class="popup_title centered">
+            Запрос спонсорских <br> пакетов
+            <div class="popup_close"></div>
+        </div>
+        <div class="popup_content clearfix">
+            <form action="/">
+
+                <div class="popup__fieldset clearfix">
+                    <!-- <div class="popup__fieldset_title">Где тренируется спортсмен?</div> -->
+                    <div class="popup__field">
+                        <label class="centered" for="fname">Имя и фамилия</label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+
+                    <div class="popup__field">
+                        <label class="centered" for="fnamecomp">Какую компанию представляете?</label>
+                        <input type="text" name="fnamecomp" id="fnamecomp">
+                    </div>
+
+                    <div class="popup__field">
+                        <label class="centered" for="factivity">Сфера деятельности вашей компании</label>
+                        <input type="text" name="factivity" id="factivity">
+                    </div>
+
+                    <div class="popup__field">
+                        <label class="centered" for="fphone">Контактный телефон</label>
+                        <input class="customPhone" type="text" name="fphone" id="fphone">
+                    </div>
+
+                    <div class="popup__field">
+                        <label class="centered" for="fmail">Контактный E-mail</label>
+                        <input class="customMail" type="text" name="fmail" id="fmail">
+                    </div>
+                </div>
+
+                <div class="popup__fieldset popup__fieldset_button clearfix">
+                    <a class="sendform btn blue v" href="#">Отправить запрос</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup_window email">
+    <div class="popup_inner">
+        <div class="popup_title centered">
+            Подписка по E-mail
+            <div class="popup_close"></div>
+        </div>
+        <div class="popup_content clearfix">
+            <form action="#">
+                <div class="form_field">
+                    <input class="customMail" type="email" name="fmail" placeholder="Введите ваш E-mail">
+                </div>
+                <div class="form_field submit">
+                    <a href="#" class="sendform btn blue v">Подписаться</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup_window phone">
+    <div class="popup_inner">
+        <div class="popup_title centered">
+            Подписка по SMS
+            <div class="popup_close"></div>
+        </div>
+        <div class="popup_content centered clearfix">
+            <form action="#">
+                <div class="form_field">
+                    <input class="customPhone" type="text" name="fphone" placeholder="Введите ваш телефон">
+                </div>
+                <div class="form_field submit">
+                    <a href="#" class="popupButton btn blue v" data-window="sms">Подписаться</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup_window sms">
+    <div class="popup_inner">
+        <div class="popup_title centered">
+            Подписка по SMS
+            <div class="popup_close"></div>
+        </div>
+        <div class="popup_content centered clearfix">
+            <p class="popup_info">Для подтверждения подписки <br>введите код из SMS</p>
+            <form action="#">
+                <div class="form_field">
+                    <input class="centered" type="text" name="fsms" placeholder="Код из SMS">
+                </div>
+                <div class="form_field submit">
+                    <a href="#" class="sendform btn blue v">Подписаться</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup_overlay"></div>

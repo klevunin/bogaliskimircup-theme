@@ -1,0 +1,443 @@
+// 
+// Boombox
+// 
+
+#boombox
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 11110;
+    background-position: initial;
+    background-repeat: initial;
+    transition: none;
+    background: rgba(0,0,0,0.9);
+
+#boombox__photo
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 80%;
+    height: auto;
+    img
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        max-height: 100%;
+        max-width: 100%;
+
+#boombox__close
+    background: #191919 url(../img/ic/ic_viewer_close.png) center center no-repeat;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: background .2s;
+    z-index: 1000;
+    &:hover,
+    &:active
+        background: #2b2b2b url(../img/ic/ic_viewer_close.png) center center no-repeat;
+
+#boombox__prev
+    background: #191919 url(../img/ic/ic_arrow-left.png) center center no-repeat;
+    width: 90px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: background .2s;
+    z-index: 990;
+    &:hover,
+    &:active
+        background: #2b2b2b url(../img/ic/ic_arrow-left.png) center center no-repeat;
+#boombox__next
+    background: #191919 url(../img/ic/ic_arrow-right.png) center center no-repeat;
+    width: 90px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: background .2s;
+    z-index: 990;
+    &:hover,
+    &:active
+        background: #2b2b2b url(../img/ic/ic_arrow-right.png) center center no-repeat;
+
+#boombox__share
+    background: #191919 url(../img/ic/ic_viewer_share.png) center center no-repeat;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    right: 90px;
+    cursor: pointer;
+    transition: background .2s;
+    z-index: 1000;
+    &.active
+        #boombox__share_popup   
+            display: block;
+    &:hover,
+    &:active,
+    &.active
+        background: #2b2b2b url(../img/colored/ic_viewer_share_active.png) center center no-repeat;
+#boombox__share_popup
+    position: relative;
+    width: 150px;
+    height: 38px;
+    padding: 6px;
+    top: -41px;
+    right: 60px;
+    text-align: center;
+    background: #333333;
+    display: none;
+    .ya-share2__counter_visible
+        display: none;
+
+#boombox__more
+    background: #191919 url(../img/ic/ic_viewer-more.png) center center no-repeat;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    transition: background .2s;
+    z-index: 1000;
+    &.active
+        #boombox__more_popup   
+            display: block;
+    &:hover,
+    &:active,
+    &.active
+        background: #2b2b2b url(../img/colored/ic_viewer-more_active.png) center center no-repeat;
+            
+#boombox__more_popup
+    position: absolute;
+    width: 160px;
+    // height: 38px;
+    top: -82px;
+    right: 2px;
+    text-align: left;
+    background: #333333;
+    display: none;
+    transition: background .2s;
+    .boombox__more_popup_link
+        padding: 5px 10px 4px;
+        color: #feffff;
+        font: 300 15px/30px font;
+        border: none;
+        display: block;
+        &:hover
+            background: #3b3b3b;
+        &:first-child
+            border-bottom: 1px solid #5c5c5c;
+        
+
+// 
+// POPUPS
+// 
+
+.popupButton
+    cursor: pointer;
+
+.popup_overlay 
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1115;
+    background-position: initial;
+    background-repeat: initial;
+    transition: none;
+    background: transparent;
+    overflow-y: auto;
+    &.blue
+        background: rgba(0, 92, 178, 0.8);
+    &.white
+        transition: none;
+        background: rgba(255, 255, 255, 1);
+        z-index: 1110;
+
+
+.popup_window 
+    display: none;
+    min-width: 300px;
+    position: absolute;
+    z-index: 2222;
+    // top: 100px;
+    left: 50%;
+    margin: 100px auto;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    transition: none;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 6px 2px rgba(0, 70, 141, 0.25);
+    &.thanksubscribe
+        position: fixed;
+        width: 300px;
+        .popup_title
+            text-align: center;
+        .popup_content
+            .popup_info
+                margin-bottom: 15px;
+    &.requisites
+            width: 300px;
+    &.targets,
+    &.interests,
+    &.sponsorship
+        min-width: 300px;
+        width: 93.75%;
+        max-width: 750px;
+        .popup_content
+            .popup_info
+                // padding-top: 0;
+    &.email,
+    &.phone,
+    &.sms
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        margin: 0 auto;
+    &.sendrequest
+        padding: 15px 12px 27px;
+        min-width: 300px;
+        width: 93.75%;
+        max-width: 450px;
+        .popup_content
+            padding: 8px 0 0;
+            .popup__fieldset
+                &_button
+                    margin-top: 16px;
+
+
+    &.request
+        padding: 15px 12px 27px;
+        min-width: 300px;
+        width: 93.75%;
+        max-width: 450px;
+        .tab
+            width: 50%;
+
+    .popup_title
+        font-family: 'ff-good-headline-web-pro-con', font;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+        letter-spacing: 0.5px;
+        line-height: 30px;
+        padding: 0 30px;
+    .popup_content
+        font-size: 15px;
+        font-family: 'Roboto', font;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        line-height: 25px;
+        &.centered 
+            text-align: center;
+            input::-webkit-input-placeholder {text-align: center; color: #000;}
+            input::-moz-placeholder          {text-align: center; color: #000;}
+            input:-moz-placeholder           {text-align: center; color: #000;}
+            input:-ms-input-placeholder      {text-align: center; color: #000;}
+        .popup_info
+            padding: 12px 0 0;
+            margin-bottom: -6px;
+        .popup_check
+            padding: 19px 15px 6px 75px;
+            min-height: 75px;
+            height: 75px;
+            position: relative;
+            vertical-align: middle;
+            background: url(../img/colored/ic_plans.png) 4px 20px no-repeat;
+            span
+                display: block;
+                top: 50%;
+                transform: translateY(-50%);
+                position: relative;
+    .popup_close
+        background: url(../img/ic/ic_close_popup.png);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 20px;
+        right: 22px;
+        cursor: pointer;
+        opacity: 0.8;
+        &:hover
+            opacity: 1;
+        &:active
+            opacity: 0.9;
+            
+.popup
+    &__etp
+        font: 400 16px/25px font;
+        color: color_orange;
+        padding: 12px 0 17px;
+    &__fieldset
+        counter-reset: popup_trainer;
+        padding: 0 2px 8px;
+        &_title
+            font: 400 14px/20px font;
+            color: #000000;
+            letter-spacing: 0.1px; 
+            padding: 12px 0 4px;
+            border-bottom: 1px solid #c9ddea;
+            span
+                color: #666666;
+                font-weight: 300;
+            .fright
+                float: right;
+                margin-top: 1px;
+                font-size: 13px;
+        &_button
+            max-width: 272px;
+            margin: 0 auto;
+    &__description
+        background: #dbeefc;
+        border-radius: 10px;
+        text-align: center;
+        margin: 12px 0 8px;
+        padding: 5px 10px 10px;
+        font: 300 14px/20px font;
+        letter-spacing: 0;
+
+
+    &__fold
+        margin-bottom: 10px;
+        &:nth-child(2)
+            .popup__fold_title
+                .fold_button_delete
+                    display: none;
+        &_title
+            counter-increment: popup_trainer;
+            padding: 7px 10px 5px;
+            font-weight: bold;
+            text-indent: 25px;
+            cursor: pointer;
+            position: relative;
+            transition: background .2s;
+            background: #e2f1fd url(../img/colored/ic_bigtable__header.png) 8px 8px no-repeat;
+            &.active
+                background: #e2f1fd url(../img/colored/ic_bigtable__header.png) 8px -471px no-repeat;
+            span
+                &:before
+                    content: counter(popup_trainer);
+            .fold_button_delete
+                position: absolute;
+                right: 8px;
+                top: 3px;
+                width: 30px;
+                height: 30px;
+                background: url(../img/ic/ic_delete.png) center center no-repeat;
+                transition: opacity .2s;
+                opacity: 1;
+                &:hover
+                    opacity: 0.8;
+                &:active
+                    opacity: 0.9;
+
+        &_body
+            padding: 2px 8px;
+        &_button
+            padding: 2px 8px;
+            position: relative;
+            max-width: 272px;
+            margin: 0 auto;
+            .btn.rounded
+                font: 300 14px/27px font;
+                img
+                    position: relative;
+                    top: 3px;
+        &_avatar
+            margin: 5px 0;
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.11);
+            float: left;
+            background: #f4f4f4 url(../img/bg/bg_trainer-photo_filler.png) center center no-repeat;
+            background-size: cover;
+        &_btnupld
+            margin: 5px 0;
+            width: 90px;
+            float: right;
+            position: relative;
+            a.blue.rounded
+                font: 300 14px/25px font;
+                letter-spacing: 0;
+                position: relative;
+                &.btnupld__delete
+                    display: none;
+            input[type=file]
+                height: 30px;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                cursor: pointer;
+
+    &__field
+        padding-top: 5px;
+        select
+            width: 100%;
+        input[type=text].error
+            border-color: #dc4545;
+            background: url(../img/ic/ic_close-cross_heavy.png) right center no-repeat;
+            & + label.error
+                font: 300 12px/25px font;
+                color: #d31616;
+                
+                
+
+input::-webkit-input-placeholder {text-align: left; color: #000;}
+input::-moz-placeholder          {text-align: left; color: #000;}
+input:-moz-placeholder           {text-align: left; color: #000;}
+input:-ms-input-placeholder      {text-align: left; color: #000;}
+
+@media screen and (max-width 760px)
+    .popup_window
+        &.targets,
+        &.sponsorship
+            .popup_content
+                .popup_info
+                    padding-top: 0;
+    #boombox__prev
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 25%;
+        height: 90px;
+    #boombox__next
+        top: auto;
+        bottom: 0;
+        left: 25%;
+        width: 25%;
+        height: 90px;
+    #boombox__share
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        width: 25%;
+        height: 90px;
+    #boombox__share_popup
+        right: 0;
+    #boombox__more
+        top: auto;
+        bottom: 0;
+        left: 75%;
+        width: 25%;
+        height: 90px;

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="production/css/style.min.css">
+	<script src="production/js/scripts.min.js"></script>
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<script src="https://use.typekit.net/jbw2und.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div data-include-html='mainmenu.html'></div>
+	<div data-include-html='header.html'></div>
+
+	<h1 class="centered">Новости и анонсы</h1>
+
+	<div class="width clearfix">
+		<div class="grid lg12 md12 sm12">
+			<div class="select__news centered">
+				<img src="./production/img/ic/ic_view_switcher.png" height="30" width="24" alt="">
+				<select>
+					<option value="all">Все материалы</option>
+					<option value="news">Новости</option>
+					<option value="announcements">Анонсы</option>
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<div class="newspage_block_wrap">
+		<div class="news_block_wrap" data-include-html='newsblock.html'></div>
+		<div class="pager">
+			<a href="#" class="pager__item prev disable"><span>←</span></a>
+			<a href="#" class="pager__item current"><span>1</span></a>
+			<a href="#" class="pager__item"><span>2</span></a>
+			<a href="#" class="pager__item"><span>3</span></a>
+			<a href="#" class="pager__item disable"><span>…</span></a>
+			<a href="#" class="pager__item"><span>20</span></a>
+			<a href="#" class="pager__item next"><span>→</span></a>
+		</div>
+	</div>
+
+
+	<div data-include-html='footer.html'></div>
+	<div data-include-html='popups.html'></div>
+</body>
+</html>

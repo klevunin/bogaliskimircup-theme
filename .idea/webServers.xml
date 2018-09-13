@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0ee64c7d-e435-4f96-90fe-c57f52eeb353" name="anna_d" url="http://46.182.25.179">
+        <fileTransfer host="46.182.25.179" port="21" rootFolder="/anna_old" password="dfe1dfcedfc0df99dfcddfebdfd9dfc1df9edf99" username="osnova">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

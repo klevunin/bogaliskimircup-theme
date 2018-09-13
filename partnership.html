@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="production/css/style.min.css">
+	<script src="production/js/scripts.min.js"></script>
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<script src="https://use.typekit.net/jbw2und.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="upper"></div>
+	<div class="upper mobile_only">
+		<a href="#upper"></a>
+	</div>
+
+	<div data-include-html='mainmenu.html'></div>
+	<div data-include-html='header.html'></div>
+
+	<div class="norel width clearfix">
+		<div class="grid lg12 md12 sm12 floormenu">
+			<div class="floormenu__item floormenu__item_menu"><span>Навигация раздела</span></div>
+			<div data-tofloor="floor0" class="floormenu__item"><span>Типы партнёрства</span></div>
+			<div data-tofloor="floor1" class="floormenu__item"><span>Запрос спонсорских пакетов</span></div>
+			<div data-tofloor="floor2" class="floormenu__item"><span>Эффект спонсорства</span></div>
+			<div data-tofloor="floor3" class="floormenu__item"><span>Куда идут средства?</span></div>
+			<div data-tofloor="floor4" class="floormenu__item"><span>Наши спонсоры</span></div>
+		</div>
+	</div>
+
+	<div data-floor="floor0" class="width partn0 clearfix">
+		<h1 class="centered">Партнёрство и спонсорство</h1>
+		<div class="text centered">Вместе мы сможем больше!</div>
+	</div>
+
+	<div class="partn0__types">
+		<div class="width clearfix centered">
+			<h2 class="centered">Типы партнерства</h2>
+
+			<div class="grid lg6 md6 md12">
+				<div class="centered">
+					<div class="partn0__sp_1"></div>
+				</div>
+				<div class="centered">
+					<b>Спонсорство</b>
+				</div>
+				<div class="centered">
+					<p>
+						Наш проект полностью социальный. Чтобы состоялся столь большой и качественный спортивный праздник, нужна спонсорская поддержка. Спонсоры Кубка имеют широкие рекламные и pr-возможности. 
+					</p>
+				</div>
+			</div>
+			<div class="grid lg6 md6 md12">
+				<div class="centered">
+					<div class="partn0__sp_2"></div>
+				</div>
+				<div class="centered">
+					<b>Бартерное партнерство</b>
+				</div>
+				<div class="centered">
+					<p>
+						Партнеры могут поддержать детский кубок по биатлону своими профильными услугами, полезными при организации соревнований.
+					</p>
+					<div class="partn0__typesbutton">
+						<a href="#" class="btn blue rounded popupButton" data-window="interests">
+							Какие области нам интересны?
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-floor="floor1" class="partn1__visitcard partn1 width clearfix">
+		<h1 class="centered">Запрос спонсорских пакетов</h1>
+		<div class="text centered">Вы можете запросить спонсорские пакеты у нашего менеджера</div>
+		<div class="visitcard withbutton clearfix">
+			<div class="clearfix">
+				<div class="visitcard__img">
+					<img src="./production/img/_work/agent-photo.png" alt="">	
+				</div>
+				<div class="visitcard__descr">
+					<div class="visitcard__position">
+						Константин Константинопольский
+					</div>
+					<div class="visitcard__phone">
+						Телефон: +7 962-252-26-22
+						<span>Доступен Viber, WhatsApp, Telegram</span>
+					</div>
+					<div class="visitcard__email">
+						Эл. почта: <a href="mailto:roman@tmean.ru">roman@tmean.ru</a>
+					</div>
+					<div class="visitcard__skype">
+						Skype: roman-tmean
+					</div>
+				</div>
+			</div>
+			<div class="visitcard__buttons clearfix">
+				<div class="visitcard__button">
+					<a href="#" class="btn blue v popupButton" data-window="sendrequest">Отправить запрос</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-floor="floor2" class="partn2 clearfix">
+		<h1 class="centered">Эффект спонсорства</h1>
+		<div class="text centered">Благородные мотивы и деловые причины</div>
+		<div class="effect__items width clearfix">
+			<div class="effect__item effect__item_1 grid lg4 md6 sm12">
+				<b>Высокая цель.</b>
+				<span>Участие в решении социальной задачи на уровне регионов и страны в целом.</span>
+				<a class="dshd js-effect__popup popupButton" data-window="effect1" href="#">Подробнее</a>
+				<div class="effect__popup">
+					<b>Высокая цель.</b>
+					<span>Спонсоры Кубка вносят свой вклад в проект, от которого выигрывают все – юные спортсмены, тренеры, родители, общество, государство.</span>
+				</div>
+			</div>
+			<div class="effect__item effect__item_2 grid lg4 md6 sm12">
+				<b>Верное направление.</b>
+				<span>Спорт – самое «благодарное» и востребованное направление спонсорства.</span>
+				<a class="dshd js-effect__popup  popupButton" data-window="effect2" href="#">Подробнее</a>
+				<div class="effect__popup">
+					<b>Верное направление.</b>
+					<span>У наших партнеров множество веских причин ассоциировать свой бренд с таким событием, как всероссийские спортивные соревнования для детей с форматом праздника-фестиваля и широкой аудиторией.</span>
+				</div>
+			</div>
+			<div class="effect__item effect__item_3 grid lg4 md6 sm12">
+				<b>Дружба достойных брендов.</b>
+				<span>Спонсоры поддерживают качественный масштабный проект, созданный титулованной спортсменкой.</span>
+				<a class="dshd js-effect__popup  popupButton" data-window="effect3" href="#">Подробнее</a>
+				<div class="effect__popup">
+					<b>Дружба достойных брендов.</b>
+					<span>Детский кубок по биатлону – это престижное мероприятие, ставшее узнаваемым брендом с уникальной миссией, достойной историей и достижениями. Всероссийский и международный резонанс, сформированный имидж, перспективные планы развития и цикличность Кубка дают долгосрочный эффект сотрудничества.</span>
+				</div>
+			</div>
+			<div class="effect__item effect__item_4 grid lg4 md6 sm12">
+				<b>Правильный статус.</b>
+				<span>Реальная административная поддержка в регионах проведения дает широкие возможности для реализации имиджевых интересов спонсоров.</span>
+				<a class="dshd js-effect__popup  popupButton" data-window="effect4" href="#">Подробнее</a>
+				<div class="effect__popup">
+					<b>Правильный статус.</b>
+					<span>Спонсоры пользуются возможностями через данный проект установить постоянные отношения со СМИ и органами власти.</span>
+				</div>
+			</div>
+			<div class="effect__item effect__item_5 grid lg4 md6 sm12">
+				<b>Мощный ресурс.</b>
+				<span>Участие в проекте олимпийских чемпионов, звезд спорта мировой величины, политиков, бизнесменов, публичных персон.</span>
+				<a class="dshd js-effect__popup  popupButton" data-window="effect5" href="#">Подробнее</a>
+				<div class="effect__popup">
+					<b>Мощный ресурс.</b>
+					<span>Для спонсоров это залог установления доверительных отношений с группами влияния и мощного PR эффекта. Широкое освещение проекта в региональных и федеральных СМИ, прямые онлайн-трансляции соревнований, дают прирост трафика и повышают узнаваемость сопричастных брендов.</span>
+				</div>
+			</div>
+			<div class="effect__item effect__item_6 grid lg4 md6 sm12">
+				<b>Беспроигрышный результат.</b>
+				<span>Прямые рекламные возможности для спонсоров во всех материалах Кубка.</span>
+				<a class="dshd js-effect__popup  popupButton" data-window="effect6" href="#">Подробнее</a>
+				<div class="effect__popup">
+					<b>Беспроигрышный результат.</b>
+					<span>Сотни объектов наружной рекламы и оформления стадиона, присутствие на сайте проекта, в pos-материалах, публикации в социальных сетях, упоминания в новостных лентах, анонсах, пресс-релизах мероприятия.</span>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="popup_window effect1">
+	    <div class="popup_inner">
+	        <div class="popup_title centered">
+	            Высокая цель
+	            <div class="popup_close"></div>
+	        </div>
+	        <div class="popup_content centered clearfix">
+	            <p class="popup_info">Спонсоры Кубка вносят свой вклад в проект, от которого выигрывают все – юные спортсмены, тренеры, родители, общество, государство.
+	            <br><br></p>
+	        </div>
+	    </div>
+	</div>
+	<div class="popup_window effect2">
+	    <div class="popup_inner">
+	        <div class="popup_title centered">
+	            Верное направление
+	            <div class="popup_close"></div>
+	        </div>
+	        <div class="popup_content centered clearfix">
+	            <p class="popup_info">У наших партнеров множество веских причин ассоциировать свой бренд с таким событием, как всероссийские спортивные соревнования для детей с форматом праздника-фестиваля и широкой аудиторией.<br><br></p>
+	        </div>
+	    </div>
+	</div>
+	<div class="popup_window effect3">
+	    <div class="popup_inner">
+	        <div class="popup_title centered">
+	            Дружба достойных брендов
+	            <div class="popup_close"></div>
+	        </div>
+	        <div class="popup_content centered clearfix">
+	            <p class="popup_info">Детский кубок по биатлону – это престижное мероприятие, ставшее узнаваемым брендом с уникальной миссией, достойной историей и достижениями. Всероссийский и международный резонанс, сформированный имидж, перспективные планы развития и цикличность Кубка дают долгосрочный эффект сотрудничества.<br><br></p>
+	        </div>
+	    </div>
+	</div>
+	<div class="popup_window effect4">
+	    <div class="popup_inner">
+	        <div class="popup_title centered">
+	            Правильный статус
+	            <div class="popup_close"></div>
+	        </div>
+	        <div class="popup_content centered clearfix">
+	            <p class="popup_info">Спонсоры пользуются возможностями через данный проект установить постоянные отношения со СМИ и органами власти.<br><br></p>
+	        </div>
+	    </div>
+	</div>
+	<div class="popup_window effect5">
+	    <div class="popup_inner">
+	        <div class="popup_title centered">
+	            Мощный ресурс
+	            <div class="popup_close"></div>
+	        </div>
+	        <div class="popup_content centered clearfix">
+	            <p class="popup_info">Для спонсоров это залог установления доверительных отношений с группами влияния и мощного PR эффекта. Широкое освещение проекта в региональных и федеральных СМИ, прямые онлайн-трансляции соревнований, дают прирост трафика и повышают узнаваемость сопричастных брендов.<br><br></p>
+	        </div>
+	    </div>
+	</div>
+	<div class="popup_window effect6">
+	    <div class="popup_inner">
+	        <div class="popup_title centered">
+	            Беспроигрышный результат
+	            <div class="popup_close"></div>
+	        </div>
+	        <div class="popup_content centered clearfix">
+	            <p class="popup_info">Сотни объектов наружной рекламы и оформления стадиона, присутствие на сайте проекта, в pos-материалах, публикации в социальных сетях, упоминания в новостных лентах, анонсах, пресс-релизах мероприятия.<br><br></p>
+	        </div>
+	    </div>
+	</div>
+
+	<div data-floor="floor3" class="width partn3 clearfix">
+		<h1 class="centered">Куда идут средства?</h1>
+		<div class="partn3__block clearfix">
+			<div class="partn3__img">
+				<img src="./production/img/partners/logo_osnova.png" height="146" width="129" alt="">
+			</div>
+			<div class="partn3__text">
+				Организаторы предлагают спонсорам ясную и четкую схему расходования средств и корректное сопровождение договора на всех этапах. Спонсорские средства поступают в Фонд развития и поддержки детского и юношеского спорта «Основа», который является соорганизатором Кубка. Спонсоры помогают решить важнейшие задачи проведения соревнований. 
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="partn3__buttons">
+				<div class="partn3__button">
+					<a href="#" class="btn rounded blue popupButton" data-window="sponsorship">Какие задачи стоят перед нами?</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div data-floor="floor4" class="partn4 clearfix">
+		<div class="width clearfix">
+			<h1 class="centered">
+				Нашими спонсорами уже являются
+			</h1>
+			<div class="partn4__item grid lg3 md3 sm12">
+				<div class="partn4__img">
+					<img src="./production/img/about/partners_logo-1.png" height="73" width="131" alt="">
+				</div>
+				<div class="partn4__text">
+					<a href="#">Международного биатлонного союза IBU</a>
+				</div>
+			</div>
+			<div class="partn4__item grid lg3 md3 sm12">
+				<div class="partn4__img">
+					<img src="./production/img/about/partners_logo-2.png" height="126" width="81" alt="">
+				</div>
+				<div class="partn4__text">
+					<a href="#">Союза биатлонистов России</a>
+				</div>
+			</div>
+			<div class="partn4__item grid lg3 md3 sm12">
+				<div class="partn4__img">
+					<img src="./production/img/about/partners_logo-3.png" height="125" width="125" alt="">
+				</div>
+				<div class="partn4__text">
+					<a href="#">Департамента физической культуры и спорта Новосибирской области</a>
+				</div>
+			</div>
+			<div class="partn4__item grid lg3 md3 sm12">
+				<div class="partn4__img">
+					<img src="./production/img/about/partners_logo-4.png" height="124" width="107" alt="">
+				</div>
+				<div class="partn4__text">
+					<a href="#">Управления спорта Мэрии г. Новосибирска</a>
+				</div>
+			</div>
+			<div class="partn4__item grid lg3 md3 sm12">
+				<div class="partn4__img">
+					<img src="./production/img/about/partners_logo-5.png" height="127" width="123" alt="">
+				</div>
+				<div class="partn4__text">
+					<a href="#">Министерства спорта, туризма и молодежной политики Сахалинской области</a>
+				</div>
+			</div>
+			<div class="partn4__item grid lg3 md3 sm12">
+				<div class="partn4__img">
+					<img src="./production/img/about/partners_logo-6.png" height="120" width="127" alt="">
+				</div>
+				<div class="partn4__text">
+					<a href="#">Комитета по физической культуре и спорту Мурманской области</a>
+				</div>
+			</div>
+			<div class="partn4__item grid lg3 md3 sm12">
+				<div class="partn4__img">
+					<img src="./production/img/about/partners_logo-7.png" height="130" width="99" alt="">
+				</div>
+				<div class="partn4__text">
+					<a href="#">Новосибирского Центра Биатлона</a>
+				</div>
+			</div>
+			<div class="partn4__item grid lg3 md3 sm12">
+				<div class="partn4__img">
+					<img src="./production/img/about/partners_logo-8.png" height="87" width="86" alt="">
+				</div>
+				<div class="partn4__text">
+					<a href="#">Партнёров и спонсоров кубка</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div data-include-html='footer.html'></div>
+	<div data-include-html='popups.html'></div>
+</body>
+</html>

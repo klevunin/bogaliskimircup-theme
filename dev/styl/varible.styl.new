@@ -1,0 +1,22 @@
+font = "Roboto", Arial, sans-serif;
+color_blue = rgba(0, 92, 178, 1);
+color_blue_border = rgba(0, 92, 178, 0.4);
+
+color_orange = rgba(128, 212, 69, 1);
+color_orange_back = rgba(239, 253, 230, 1);
+
+
+
+width_lg = 1200px;
+width_md = 768px;
+width_sm = 320px;
+
+@font-face {
+	font-family: "Roboto Condensed";
+	src: url("../fonts/roboto-condensed.ttf");
+}
+
+@font-face {
+	font-family: "Roboto Condensed Light";
+	src: url("../fonts/roboto-condensed-light.ttf");
+}
